@@ -21,6 +21,7 @@ class Firebase:
                     "client_x509_cert_url": os.getenv("client_x509_cert_url"),
                     "universe_domain": "googleapis.com"
                 }
+            print(firebase_credentials)
             cred = credentials.Certificate(firebase_credentials)
             firebase_admin.initialize_app(cred)
 
